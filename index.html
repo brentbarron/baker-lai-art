@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elena Vasquez — Fine Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">Elena Vasquez</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Fine Art</p>
+      <h1 class="hero__title">Elena<br /><em>Vasquez</em></h1>
+      <p class="hero__subtitle">Oil &amp; Watercolor Paintings</p>
+      <a href="#gallery" class="btn btn--outline">View Gallery</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Works</p>
+        <h2 class="section-title">Gallery</h2>
+      </header>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="oil">Oil</button>
+        <button class="filter-tab" data-filter="watercolor">Watercolor</button>
+        <button class="filter-tab" data-filter="abstract">Abstract</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <article class="gallery-item" data-category="oil" data-index="0">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art01/800/1000" alt="Golden Afternoon" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Golden Afternoon">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Golden Afternoon</h3>
+            <p class="gallery-item__meta">Oil on Canvas &mdash; 2024</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="watercolor" data-index="1">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art02/800/600" alt="Morning Mist" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Morning Mist">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Morning Mist</h3>
+            <p class="gallery-item__meta">Watercolor &mdash; 2024</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="abstract" data-index="2">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art03/800/800" alt="Chromatic Drift" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Chromatic Drift">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Chromatic Drift</h3>
+            <p class="gallery-item__meta">Oil &mdash; 2023</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="oil" data-index="3">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art04/800/1100" alt="Quiet Shore" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Quiet Shore">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Quiet Shore</h3>
+            <p class="gallery-item__meta">Oil on Canvas &mdash; 2023</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="watercolor" data-index="4">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art05/800/700" alt="Bloom Study III" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Bloom Study III">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Bloom Study III</h3>
+            <p class="gallery-item__meta">Watercolor &mdash; 2023</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="abstract" data-index="5">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art06/800/900" alt="Tidal Memory" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Tidal Memory">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Tidal Memory</h3>
+            <p class="gallery-item__meta">Mixed Media &mdash; 2022</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="oil" data-index="6">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art07/800/650" alt="The Valley" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View The Valley">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">The Valley</h3>
+            <p class="gallery-item__meta">Oil on Canvas &mdash; 2022</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="watercolor" data-index="7">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art08/800/1050" alt="First Light" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View First Light">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">First Light</h3>
+            <p class="gallery-item__meta">Watercolor &mdash; 2022</p>
+          </div>
+        </article>
+
+        <article class="gallery-item" data-category="abstract" data-index="8">
+          <div class="gallery-item__img-wrap">
+            <img src="https://picsum.photos/seed/art09/800/750" alt="Equilibrium" loading="lazy" />
+            <button class="gallery-item__overlay" aria-label="View Equilibrium">
+              <span class="gallery-item__zoom">&#x2197;</span>
+            </button>
+          </div>
+          <div class="gallery-item__info">
+            <h3 class="gallery-item__title">Equilibrium</h3>
+            <p class="gallery-item__meta">Abstract &mdash; 2021</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="container about-section__inner">
+      <div class="about-section__image-col">
+        <div class="about-section__img-frame">
+          <img src="https://picsum.photos/seed/artist-portrait/600/750" alt="Elena Vasquez, artist" />
+        </div>
+      </div>
+      <div class="about-section__text-col">
+        <header class="section-header section-header--left">
+          <p class="section-eyebrow">About</p>
+          <h2 class="section-title">The Artist</h2>
+        </header>
+        <p class="about-section__body">
+          Elena Vasquez is a Spanish-born painter currently based in Barcelona, whose work explores the intersection of light, memory, and landscape. Drawing on the luminous tradition of Sorolla while pushing toward contemporary abstraction, her paintings capture fleeting moments of natural beauty rendered in oil and watercolor.
+        </p>
+        <p class="about-section__body">
+          After completing her MFA at the Royal College of Art, London, Elena returned to the Mediterranean coast where the quality of light first shaped her artistic vision. Her paintings have been exhibited across Europe and the Americas, and are held in private and institutional collections worldwide.
+        </p>
+        <div class="about-section__stats">
+          <div class="stat">
+            <span class="stat__number">14+</span>
+            <span class="stat__label">Years Painting</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">60+</span>
+            <span class="stat__label">Works Sold</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">22</span>
+            <span class="stat__label">Exhibitions</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--solid">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-section__inner">
+      <header class="section-header">
+        <p class="section-eyebrow">Inquiries</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">For purchase inquiries, commissions, or exhibition bookings.</p>
+      </header>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="contact-form__row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is this regarding?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--solid">Send Message</button>
+        <p class="contact-form__success" id="formSuccess">Thank you — your message has been sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Elena Vasquez</p>
+      <p class="footer__copy">&copy; 2024 All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" aria-label="Pinterest">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.852 0 1.265.64 1.265 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.476 1.806 1.772 0 3.137-1.868 3.137-4.568 0-2.39-1.717-4.061-4.168-4.061-2.837 0-4.502 2.128-4.502 4.328 0 .857.33 1.774.742 2.276a.3.3 0 0 1 .069.286c-.076.315-.244.995-.277 1.134-.044.183-.145.222-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.967-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S17.522 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Next">&#8594;</button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <div class="lightbox__caption">
+        <p class="lightbox__title" id="lightboxTitle"></p>
+        <p class="lightbox__meta" id="lightboxMeta"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
