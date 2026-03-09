@@ -81,15 +81,9 @@ function buildGalleryItem(entry, index) {
   return article;
 }
 
-async function loadGallery() {
-  try {
-    const res  = await fetch('gallery.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    data.forEach((entry, i) => galleryGrid.appendChild(buildGalleryItem(entry, i)));
-  } catch (err) {
-    console.warn('Could not load gallery.json:', err);
-  }
+function loadGallery() {
+  const data = window.GALLERY_DATA || [];
+  data.forEach((entry, i) => galleryGrid.appendChild(buildGalleryItem(entry, i)));
   initGallery();
 }
 
