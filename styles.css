@@ -524,6 +524,11 @@ ul {
   filter: saturate(0.9);
 }
 
+.about-artist-mark {
+  width: 100%;
+  display: block;
+}
+
 .about-section__img-frame::before {
   content: '';
   position: absolute;
