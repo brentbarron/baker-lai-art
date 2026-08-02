@@ -7,6 +7,14 @@
 
 window.GALLERY_DATA = [
   {
+    "src": "images/wink.jpg",
+    "title": "Wink",
+    "medium": "Acrylic",
+    "year": "2026",
+    "category": "Face Art",
+    "notes": "available for purchase"
+  },
+  {
     "src": "images/fire-doesnt-ask.jpg",
     "title": "Fire doesn\u2019t ask",
     "medium": "Mixed Media",
