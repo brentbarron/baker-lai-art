@@ -87,12 +87,11 @@ window.GALLERY_DATA = [
     "notes": "available for purchase"
   },
   {
-    "src": "images/unbecoming.jpg",
-    "title": "Unbecoming",
+    "src": "images/unbecoming-sold.jpg",
+    "title": "Unbecoming (Sold)",
     "medium": "Mixed Media",
     "year": "2026",
-    "category": "Face Art",
-    "notes": "available for purchase"
+    "category": "Face Art"
   },
   {
     "src": "images/dream-with-me.jpg",
@@ -236,8 +235,8 @@ window.GALLERY_DATA = [
     "category": "Figures"
   },
   {
-    "src": "images/bosphorus.jpg",
-    "title": "Bosphorus",
+    "src": "images/bosphorus-sold.jpg",
+    "title": "Bosphorus (Sold)",
     "medium": "Acrylic",
     "year": "2026",
     "category": "Abstract"
