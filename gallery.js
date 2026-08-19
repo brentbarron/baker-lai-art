@@ -258,12 +258,11 @@ window.GALLERY_DATA = [
     "notes": "available for purchase"
   },
   {
-    "src": "images/sun-kissed.jpg",
-    "title": "Sun-kissed",
+    "src": "images/sun-kissed-sold.jpg",
+    "title": "Sun-kissed (Sold)",
     "medium": "Mixed Media",
     "year": "2026",
-    "category": "Abstract",
-    "notes": "available for purchase"
+    "category": "Abstract"
   },
   {
     "src": "images/quadrophenia.jpg",
